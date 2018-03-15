@@ -49,4 +49,4 @@ fi
 export PORT=${PORT:-80}
 
 echo "=> Starting meteor app on port:$PORT"
-exec node main.js
+exec node ${METEORD_NODE_OPTIONS} main.js
